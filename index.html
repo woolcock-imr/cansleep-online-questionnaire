@@ -32,14 +32,15 @@
         //modules used in this app
         $vm.module_list={
             //you can add modules here directly
-            "home":                         {url:"$A/modules/o/online-questionnaire-login.html",router:1},
-            "online-questionnaire-panel":   {url:"$A/modules/o/online-questionnaire-panel.html"},
+            "home":                         {url:"$A/modules/c/cansleep/online-questionnaire-login.html",router:1,prefix:"cansleep-"},
+            //"online-questionnaire-panel":   {url:"$A/modules/o/online-questionnaire-panel.html"},
         };
         //------------------------------------
         //where are your all other modules
         $vm.app_modules=[
             //you can add a js file that will add mmodules to the $vm.module_list
-            "$A/modules/cansleep.js",
+            "$A/modules/cansleep-app.js",
+            "$A/modules/cansleep-task.js",
         ]
         //------------------------------------
         

@@ -29,7 +29,7 @@
         //------------------------------------
         //sql server database service address
         $vm.api_type="sqlserver"; 
-        $vm.qid='91000127'; //permission control table
+        $vm.qid='91000626'; //permission control table
         $VmAPI.api_base="https://rt.woolcock.org.au/pro/";
         if(window.location.toString().indexOf('db=dev')!=-1) $VmAPI.api_base="https://cbs.wappsystem.com/dev/";
         //------------------------------------
@@ -79,6 +79,12 @@
         $vm.start=function(){
             $vm.init(function(){
                $vm.init_status=1;
+               
+               //======
+               //as guest when start app
+               $vm.user_name='guest'
+               //======
+               
                $vm.show_user();
            })
         }
